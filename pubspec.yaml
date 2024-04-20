@@ -39,6 +39,8 @@ flutter:
         pluginClass: FlutterIapVerificatorPlugin
       ios:
         pluginClass: FlutterIapVerificatorPlugin
+      macos:
+        pluginClass: FlutterIapVerificatorPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
