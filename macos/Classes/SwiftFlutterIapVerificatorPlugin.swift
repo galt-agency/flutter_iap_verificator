@@ -1,10 +1,9 @@
-import Flutter
-import UIKit
+import FlutterMacOS
 import TPInAppReceipt
 
 public class SwiftFlutterIapVerificatorPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_iap_verificator", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "flutter_iap_verificator", binaryMessenger: registrar.messenger)
     let instance = SwiftFlutterIapVerificatorPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
